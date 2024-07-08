@@ -46,7 +46,7 @@ function checkGameState() {
   function areEqual(...elements) {
     let values = elements.map((element) => element.innerHTML);
     if (values[0] != "" && values.every((value, _, arr) => value === arr[0])) {
-      let color = currentPlayer === 1 ? "Fuchsia" : "Green";
+      let color = currentPlayer === 1 ? "Fuchsia" : "Red";
       elements.forEach((element) => (element.style.backgroundColor = color));
       return true;
     } else {
